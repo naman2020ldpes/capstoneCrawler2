@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Web Dump Simulation</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00ffcc;
+      font-family: "Courier New", monospace;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #ff3333;
+      text-shadow: 0 0 15px red;
+    }
+    .banner {
+      font-size: 14px;
+      color: #ff0000;
+      text-align: center;
+      white-space: pre;
+      margin-bottom: 20px;
+    }
+    .ad-section, .files, .decrypt, .results {
+      margin-top: 25px;
+      padding: 15px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 8px;
+    }
+    .ad {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .ad img {
+      width: 120px;
+      height: 90px;
+      object-fit: cover;
+      border: 2px solid #ff3333;
+    }
+    .files ul {
+      list-style: none;
+      padding: 0;
+    }
+    .files li {
+      margin: 8px 0;
+    }
+    .files a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .files a:hover {
+      color: #ff3333;
+      text-decoration: underline;
+    }
+    .hidden { display: none; }
+    .highlight-email { color: #ffcc00; }
+    .highlight-phone { color: #ff3333; }
+  </style>
+</head>
+<body>
+
+  <h1>💀 Dark Web Data Dump 💀</h1>
+
+  <div class="banner">
+{===== DARK PORTAL =====}
+   Enter if you dare...
+  </div>
+
+  <!-- Fake Ads -->
+  <div class="ad-section">
+    <h2>Advertisements</h2>
+
+    <div class="ad">
+      <img src="https://i.ibb.co/d5r1Rxp/haunted-doll.jpg" alt="Haunted Doll">
+      <div>
+        <strong>Haunted Dolls for Sale</strong><br>
+        “Creepiest dolls ever found, guaranteed to whisper at night.”
+      </div>
+    </div>
+
+    <div class="ad">
+      <img src="https://i.ibb.co/6Zp4RcT/anonymous-hacker.jpg" alt="Hacker">
+      <div>
+        <strong>Fake Identity Generator</strong><br>
+        “Need a new name? Become Batman today.”
+      </div>
+    </div>
+
+    <div class="ad">
+      <img src="https://i.ibb.co/6NYC0mQ/time-machine.jpg" alt="Time Machine">
+      <div>
+        <strong>Time Machine Rental</strong><br>
+        “Go back 2 hours and fix your mistakes. Limited stock.”
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Dumps -->
+  <div class="files">
+    <h2>Data Dumps</h2>
+    <p>Leaked databases available:</p>
+    <ul>
+      <li><a href="C:/Users/purva/OneDrive/Desktop/files/users_2025.csv" download>users_2025.csv</a></li>
+      <li><a href="C:/Users/purva/OneDrive/Desktop/files/passwords_dump.zip" download>passwords_dump.zip</a></li>
+      <li><a href="C:/Users/purva/OneDrive/Desktop/files/emails_list.txt" download>emails_list.txt</a></li>
+      <li><a href="user_json.json" download>user_json.json</a></li>
+
+    </ul>
+  </div>
+
+  <!-- Decryption Section -->
+  <div class="decrypt">
+    <h2>🔑 Enter Decryption Key</h2>
+    <input type="text" id="keyInput" placeholder="Enter Key...">
+    <button onclick="decryptFile()">Decrypt</button>
+  </div>
+
+  <!-- Results -->
+  <div id="decryptedContent" class="results hidden">
+    <h2>📂 Decrypted Data</h2>
+    <p>
+      Emails found: <span class="highlight-email">john@fake.com, admin@dark.net</span><br>
+      Phone Numbers: <span class="highlight-phone">+91-9999999999, +44-123456789</span>
+    </p>
+    <p><strong>Key Found:</strong> <code>DECRYPT123</code></p>
+  </div>
+
+  <script>
+    function decryptFile() {
+      let key = document.getElementById("keyInput").value;
+      if (key === "DECRYPT123") {
+        document.getElementById("decryptedContent").classList.remove("hidden");
+        alert("File successfully decrypted!");
+      } else {
+        alert("Invalid key! Try again.");
+      }
+    }
+  </script>
+
+</body>
+</html>

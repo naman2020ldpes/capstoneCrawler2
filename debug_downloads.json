@@ -1,0 +1,18 @@
+{
+  "127.0.0.1_5500": [
+    {
+      "file_url": "http://127.0.0.1:5500/user_json.json",
+      "local_path": "c:\\Users\\Dell\\OneDrive\\Desktop\\leakpeek old\\capstone work\\crawler 2\\downloads\\127.0.0.1_5500\\user_json.json",
+      "filename": "user_json.json",
+      "timestamp": "2025-08-31T17:29:25.516780Z"
+    },
+    {
+      "keys_found": [
+        {
+          "type": "key",
+          "value": "document.getElementById("
+        }
+      ]
+    }
+  ]
+}

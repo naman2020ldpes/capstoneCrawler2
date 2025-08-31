@@ -1,0 +1,78 @@
+2025-08-31 22:39:08,147 - tracker - INFO - Loaded tracking data with 0 domains
+2025-08-31 22:39:08,312 - downloader - INFO - Downloaded: user_json.json
+2025-08-31 22:45:00,274 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002A841335890>
+2025-08-31 22:48:39,894 - tracker - INFO - Loaded tracking data with 0 domains
+2025-08-31 22:48:40,031 - downloader - INFO - Downloaded: user_json.json
+2025-08-31 22:48:40,033 - tracker - INFO - Added download entry for user_json.json from 127.0.0.1_5500
+2025-08-31 22:50:00,907 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000027083434C50>
+2025-08-31 22:52:44,802 - tracker - INFO - Loaded tracking data with 0 domains
+2025-08-31 22:52:45,054 - downloader - INFO - Downloaded: user_json.json
+2025-08-31 22:52:45,055 - tracker - INFO - Added download entry for user_json.json from 127.0.0.1_5500
+2025-08-31 22:52:57,918 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001A607740BD0>
+2025-08-31 22:52:57,919 - asyncio - ERROR - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000001A60771E350>, 107881.312)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000001A607740C90>
+2025-08-31 22:55:04,871 - tracker - INFO - Loaded tracking data with 0 domains
+2025-08-31 22:55:05,035 - downloader - INFO - Downloaded: user_json.json
+2025-08-31 22:55:05,037 - tracker - INFO - Added download entry for user_json.json from 127.0.0.1_5500
+2025-08-31 22:55:36,591 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001D1D5230E50>
+2025-08-31 22:59:25,250 - tracker - INFO - Loaded tracking data with 0 domains
+2025-08-31 22:59:25,514 - downloader - INFO - Downloaded: user_json.json
+2025-08-31 22:59:25,516 - tracker - INFO - Added download entry for user_json.json from 127.0.0.1_5500
+2025-08-31 22:59:25,541 - crawler - INFO - Starting crawl of 127.0.0.1_5500
+2025-08-31 22:59:25,549 - crawler - INFO - Crawled page 1: http://127.0.0.1:5500/demo.html
+2025-08-31 22:59:25,551 - crawler - INFO - Found 1 files to download from 127.0.0.1_5500
+2025-08-31 22:59:25,551 - downloader - INFO - Skipping existing file: user_json.json
+2025-08-31 22:59:25,554 - tracker - INFO - Added 1 keys for 127.0.0.1_5500
+2025-08-31 22:59:25,554 - crawler - INFO - Found 1 keys on pages from 127.0.0.1_5500
+2025-08-31 22:59:48,128 - tracker - INFO - Loaded tracking data with 1 domains
+2025-08-31 22:59:48,146 - downloader - INFO - Skipping existing file: user_json.json
+2025-08-31 22:59:48,150 - crawler - INFO - Starting crawl of 127.0.0.1_5500
+2025-08-31 22:59:48,160 - crawler - INFO - Crawled page 1: http://127.0.0.1:5500/demo.html
+2025-08-31 22:59:48,160 - crawler - INFO - Found 1 files to download from 127.0.0.1_5500
+2025-08-31 22:59:48,160 - downloader - INFO - Skipping existing file: user_json.json
+2025-08-31 22:59:48,160 - tracker - INFO - Added 1 keys for 127.0.0.1_5500
+2025-08-31 22:59:48,160 - crawler - INFO - Found 1 keys on pages from 127.0.0.1_5500
+2025-08-31 23:03:38,588 - tracker - INFO - Loaded tracking data with 1 domains
+2025-08-31 23:03:38,601 - downloader - INFO - Skipping existing file: user_json.json
+2025-08-31 23:03:38,610 - crawler - INFO - Starting crawl of 127.0.0.1_5500
+2025-08-31 23:03:38,614 - crawler - INFO - Crawled page 1: http://127.0.0.1:5500/demo.html
+2025-08-31 23:03:38,617 - crawler - INFO - Found 1 files to download from 127.0.0.1_5500
+2025-08-31 23:03:38,617 - downloader - INFO - Skipping existing file: user_json.json
+2025-08-31 23:03:38,617 - tracker - INFO - Added 1 keys for 127.0.0.1_5500
+2025-08-31 23:03:38,617 - crawler - INFO - Found 1 keys on pages from 127.0.0.1_5500
+2025-08-31 23:04:57,229 - tracker - INFO - Loaded tracking data with 0 domains
+2025-08-31 23:04:57,229 - crawler - INFO - Starting crawl of 1 sites
+2025-08-31 23:04:57,236 - crawler - INFO - Starting crawl of 127.0.0.1_5500
+2025-08-31 23:04:57,241 - crawler - INFO - Crawled page 1: http://127.0.0.1:5500/demo.html
+2025-08-31 23:04:57,245 - crawler - INFO - Found 1 files to download from 127.0.0.1_5500
+2025-08-31 23:04:57,476 - downloader - INFO - Downloaded: user_json.json
+2025-08-31 23:04:57,476 - tracker - INFO - Added download entry for user_json.json from 127.0.0.1_5500
+2025-08-31 23:04:57,481 - tracker - INFO - Added 1 keys for 127.0.0.1_5500
+2025-08-31 23:04:57,481 - crawler - INFO - Found 1 keys on pages from 127.0.0.1_5500
+2025-08-31 23:04:57,484 - crawler - INFO - Site http://127.0.0.1:5500/demo.html completed: {'pages_visited': 1, 'files_downloaded': 1, 'files_skipped': 0, 'keys_found': 1}
+2025-08-31 23:04:57,489 - __main__ - INFO - Crawl completed - Pages: 1, Files: 1, Keys: 1
+2025-08-31 23:05:17,121 - tracker - INFO - Loaded tracking data with 1 domains
+2025-08-31 23:05:17,121 - crawler - INFO - Starting crawl of 1 sites
+2025-08-31 23:05:17,126 - crawler - INFO - Starting crawl of 127.0.0.1_5500
+2025-08-31 23:05:17,129 - crawler - INFO - Crawled page 1: http://127.0.0.1:5500/demo.html
+2025-08-31 23:05:17,137 - crawler - INFO - Found 1 files to download from 127.0.0.1_5500
+2025-08-31 23:05:17,137 - downloader - INFO - Skipping existing file: user_json.json
+2025-08-31 23:05:17,139 - tracker - INFO - Added 1 keys for 127.0.0.1_5500
+2025-08-31 23:05:17,139 - crawler - INFO - Found 1 keys on pages from 127.0.0.1_5500
+2025-08-31 23:05:17,139 - crawler - INFO - Site http://127.0.0.1:5500/demo.html completed: {'pages_visited': 1, 'files_downloaded': 0, 'files_skipped': 1, 'keys_found': 1}
+2025-08-31 23:05:17,143 - __main__ - INFO - Crawl completed - Pages: 1, Files: 0, Keys: 1
+2025-08-31 23:05:30,800 - tracker - INFO - Loaded tracking data with 1 domains
+2025-08-31 23:05:30,804 - crawler - INFO - Starting crawl of 1 sites
+2025-08-31 23:05:30,804 - crawler - INFO - Starting crawl of 127.0.0.1_5500
+2025-08-31 23:05:30,810 - crawler - INFO - Crawled page 1: http://127.0.0.1:5500/demo.html
+2025-08-31 23:05:30,814 - crawler - INFO - Found 1 files to download from 127.0.0.1_5500
+2025-08-31 23:05:30,814 - downloader - INFO - Skipping existing file: user_json.json
+2025-08-31 23:05:30,814 - tracker - INFO - Added 1 keys for 127.0.0.1_5500
+2025-08-31 23:05:30,817 - crawler - INFO - Found 1 keys on pages from 127.0.0.1_5500
+2025-08-31 23:05:30,817 - crawler - INFO - Site http://127.0.0.1:5500/demo.html completed: {'pages_visited': 1, 'files_downloaded': 0, 'files_skipped': 1, 'keys_found': 1}
+2025-08-31 23:05:30,822 - __main__ - INFO - Crawl completed - Pages: 1, Files: 0, Keys: 1

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "password": "Password123!",
+    "date_created": "2023-05-10T14:30:00Z",
+    "last_login": "2025-08-30T08:15:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "password": "SecurePass456!",
+    "date_created": "2024-01-22T10:00:00Z",
+    "last_login": "2025-08-28T17:50:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Catherine Lee",
+    "email": "catherine.lee@example.com",
+    "password": "CatLee789@",
+    "date_created": "2024-07-15T12:20:00Z",
+    "last_login": "2025-08-31T09:45:00Z"
+  },
+  {
+    "id": 4,
+    "name": "David Garcia",
+    "email": "david.garcia@example.com",
+    "password": "DgPass321#",
+    "date_created": "2023-11-03T09:10:00Z",
+    "last_login": "2025-08-30T22:00:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Emily Chen",
+    "email": "emily.chen@example.com",
+    "password": "EmilyC!234",
+    "date_created": "2024-05-25T07:50:00Z",
+    "last_login": "2025-08-29T14:30:00Z"
+  }
+]
