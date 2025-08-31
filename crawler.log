@@ -76,3 +76,13 @@ client_session: <aiohttp.client.ClientSession object at 0x000001D1D5230E50>
 2025-08-31 23:05:30,817 - crawler - INFO - Found 1 keys on pages from 127.0.0.1_5500
 2025-08-31 23:05:30,817 - crawler - INFO - Site http://127.0.0.1:5500/demo.html completed: {'pages_visited': 1, 'files_downloaded': 0, 'files_skipped': 1, 'keys_found': 1}
 2025-08-31 23:05:30,822 - __main__ - INFO - Crawl completed - Pages: 1, Files: 0, Keys: 1
+2025-08-31 23:43:38,895 - tracker - INFO - Loaded tracking data with 1 domains
+2025-08-31 23:43:38,900 - crawler - INFO - Starting crawl of 1 sites
+2025-08-31 23:43:38,903 - crawler - INFO - Starting crawl of 127.0.0.1_5500
+2025-08-31 23:43:38,910 - crawler - INFO - Crawled page 1: http://127.0.0.1:5500/demo.html
+2025-08-31 23:43:38,910 - crawler - INFO - Found 1 files to download from 127.0.0.1_5500
+2025-08-31 23:43:38,910 - downloader - INFO - Skipping existing file: user_json.json
+2025-08-31 23:43:38,919 - tracker - INFO - Added 1 keys for 127.0.0.1_5500
+2025-08-31 23:43:38,921 - crawler - INFO - Found 1 keys on pages from 127.0.0.1_5500
+2025-08-31 23:43:38,921 - crawler - INFO - Site http://127.0.0.1:5500/demo.html completed: {'pages_visited': 1, 'files_downloaded': 0, 'files_skipped': 1, 'keys_found': 1}
+2025-08-31 23:43:38,923 - __main__ - INFO - Crawl completed - Pages: 1, Files: 0, Keys: 1
