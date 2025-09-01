@@ -1,11 +1,11 @@
-2025-09-01 09:26:07,695 - tracker - INFO - Loaded tracking data with 0 domains
-2025-09-01 09:26:07,695 - crawler - INFO - Starting crawl of 1 sites
-2025-09-01 09:26:07,705 - crawler - INFO - Starting crawl of 127.0.0.1_5500
-2025-09-01 09:26:07,712 - crawler - INFO - Crawled page 1: http://127.0.0.1:5500/demo.html
-2025-09-01 09:26:07,712 - crawler - INFO - Found 1 files to download from 127.0.0.1_5500
-2025-09-01 09:26:08,178 - downloader - INFO - Downloaded: user_csv.csv
-2025-09-01 09:26:08,179 - tracker - INFO - Added download entry for user_csv.csv from 127.0.0.1_5500
-2025-09-01 09:26:08,184 - tracker - INFO - Added 3 keys for 127.0.0.1_5500
-2025-09-01 09:26:08,187 - crawler - INFO - Found 3 keys on pages from 127.0.0.1_5500
-2025-09-01 09:26:08,187 - crawler - INFO - Site http://127.0.0.1:5500/demo.html completed: {'pages_visited': 1, 'files_downloaded': 1, 'files_skipped': 0, 'keys_found': 3}
-2025-09-01 09:26:08,188 - __main__ - INFO - Crawl completed - Pages: 1, Files: 1, Keys: 3
+2025-09-01 12:15:56,068 - tracker - INFO - Loaded tracking data with 0 domains
+2025-09-01 12:15:56,068 - crawler - INFO - Starting crawl of 1 sites
+2025-09-01 12:15:56,068 - crawler - INFO - Starting crawl of 127.0.0.1_5500
+2025-09-01 12:15:56,087 - crawler - INFO - Crawled page 1: http://127.0.0.1:5500/demo.html
+2025-09-01 12:15:56,088 - crawler - INFO - Found 1 files to download from 127.0.0.1_5500
+2025-09-01 12:15:56,308 - downloader - INFO - Downloaded: user_csv.csv
+2025-09-01 12:15:56,308 - tracker - INFO - Added download entry for user_csv.csv from 127.0.0.1_5500
+2025-09-01 12:15:56,308 - tracker - INFO - Added 3 keys for 127.0.0.1_5500
+2025-09-01 12:15:56,308 - crawler - INFO - Found 3 keys on pages from 127.0.0.1_5500
+2025-09-01 12:15:56,308 - crawler - INFO - Site http://127.0.0.1:5500/demo.html completed: {'pages_visited': 1, 'files_downloaded': 1, 'files_skipped': 0, 'keys_found': 3}
+2025-09-01 12:15:56,315 - __main__ - INFO - Crawl completed - Pages: 1, Files: 1, Keys: 3

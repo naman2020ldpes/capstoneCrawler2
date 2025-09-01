@@ -1,10 +1,20 @@
 # description_logic.py
-"""Module to handle file decryption after download using keys found during crawling."""
+"""mdues to handle file decryption after download using keys found during crawling.
+also puts the loging info in the downloads.json (to records) and .."""
 
-import asyncio
+"""Methods:
+
+decrypt_all_files: Loads downloads.json, iterates over each domain, extracts keys, and processes files for decryption.
+_extract_domain_keys: Extracts all unique keys found for a domain, ensuring they are in the correct format (8 bytes for DES).
+_process_domain_files: For each file in a domain, attempts decryption if keys are available, skips if already decrypted or file is missing.
+_decrypt_with_domain_keys: Tries each key for a file until decryption succeeds or all keys fail. Only supports CSV files.
+_save_updated_json: Saves the updated decryption status back to downloads.json.
+decrypt_all_files (async function)"""
+
+import asyncio # async file processings
 import json
-import logging
-import shutil
+import logging #logg the historys
+# import shutil
 from pathlib import Path
 from typing import Dict, List, Set
 import sys
@@ -23,7 +33,7 @@ DECRYPTED_SUBDIR = "decrypted"
 
 class FileDecryptor:
     """Handles decryption of downloaded files using keys found during crawling."""
-    
+
     def __init__(self):
         self.stats = {
             'success': 0,

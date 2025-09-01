@@ -1,0 +1,6 @@
+id,name,email,password,date_created,last_login
+1,Alice Johnson,alice.johnson@example.com,Password123!,2023-05-10T14:30:00Z,2025-08-30T08:15:00Z
+2,Bob Smith,bob.smith@example.com,SecurePass456!,2024-01-22T10:00:00Z,2025-08-28T17:50:00Z
+3,Catherine Lee,catherine.lee@example.com,CatLee789@,2024-07-15T12:20:00Z,2025-08-31T09:45:00Z
+4,David Garcia,david.garcia@example.com,DgPass321#,2023-11-03T09:10:00Z,2025-08-30T22:00:00Z
+5,Emily Chen,emily.chen@example.com,EmilyC!234,2024-05-25T07:50:00Z,2025-08-29T14:30:00Z
