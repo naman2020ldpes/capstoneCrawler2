@@ -12,7 +12,8 @@ from config import JSON_FILE
 from utils import setup_logging
 from tracker import JSONTracker
 from crawler import AsyncWebCrawler
-
+# Add this with your other imports at the top
+from description_logic import decrypt_all_files
 
 async def load_urls_from_file(urls_file: str) -> List[str]:
     """Load URLs from a JSON file."""
@@ -119,18 +120,43 @@ async def main(urls_file: str, use_tor: bool = False):
         print(f"Total files tracked: {final_stats['files']}")
         print(f"Total keys tracked: {final_stats['keys']}")
         
-        # Show file locations
+        # NEW: Add decryption process after crawling completes
+        print(f"\nStarting file decryption using domain-specific keys...")
+        try:
+            decryption_stats = await decrypt_all_files()
+            print(f"Decryption completed: {decryption_stats['success']} successful, "
+                  f"{decryption_stats['failed']} failed, {decryption_stats['skipped']} skipped, "
+                  f"{decryption_stats.get('no_keys_available', 0)} with no keys available")
+            
+            # Add decryption results to the final output
+            print(f"Files successfully decrypted: {decryption_stats['success']}")
+            print(f"Files failed to decrypt: {decryption_stats['failed']}")
+            if decryption_stats.get('no_keys_available', 0) > 0:
+                print(f"Files with no keys available: {decryption_stats['no_keys_available']}")
+                
+        except Exception as e:
+            print(f"Error during decryption process: {e}")
+            logger.error(f"Decryption process failed: {e}")
+            decryption_stats = {'success': 0, 'failed': 0, 'skipped': 0, 'no_keys_available': 0}
+        
+        # Show file locations (updated to include decrypted files)
         if results['files_downloaded'] > 0:
             print(f"\nDownloads saved to: {Path('downloads').absolute()}")
+            print(f"Decrypted files saved to: {Path('downloads').absolute()}/[domain]/decrypted/")
         print(f"Tracking data saved to: {JSON_FILE.absolute()}")
         print(f"Logs saved to: {Path('crawler.log').absolute()}")
         
-        # Log final statistics
+        # Log final statistics including decryption
         logger.info(f"Crawl completed - Pages: {results['pages_visited']}, "
                    f"Files: {results['files_downloaded']}, "
-                   f"Keys: {results['keys_found']}")
+                   f"Keys: {results['keys_found']}, "
+                   f"Decrypted: {decryption_stats['success']}")
         
-        return results
+        return {
+            'crawl_results': results,
+            'decryption_results': decryption_stats,
+            'final_stats': final_stats
+        }
         
     except asyncio.TimeoutError:
         elapsed_time = time.time() - start_time
